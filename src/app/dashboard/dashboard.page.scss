@@ -1,0 +1,82 @@
+.no-gap {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .notification-icon {
+    font-size: 20px;
+  }
+  .notification-icon {
+    color: #fff;
+  }
+  .home-top-nav {
+    background: transparent linear-gradient(270deg, #585858 0%, #1A1A1A 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #00000066;
+    border-radius: 0px 0px 0px 50px;
+    opacity: 1;
+  }
+  .txt-1 {
+    color: #ffffff;
+    opacity: 0.66;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+  }
+  .txt-2 {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  .nav-bc-icon {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background: rgba(250,250,250,.4);
+    margin: auto;
+      .icn-hd-nav {
+        padding: 20%;
+        position: relative;
+        top: 10px;
+        font-size: 35px;
+        color: #fff;
+        opacity: .3;
+      }
+  }
+  .segment-wrp {
+      padding:180px 10px 0;
+      ion-segment-button {
+        --indicator-color:transparent linear-gradient(180deg, #C8325D 0%, #921D40 100%) 0% 0% no-repeat padding-box;
+        --color-checked:#fff;
+        --color:#5A5A5A;
+      }
+      .icn-bac {
+        background: #D7A5B4;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        ion-img {
+            width: 30px;
+            margin: auto;
+            position: relative;
+            top: 30%;
+        }
+      }
+      .icn-rgt {
+          font-size: 28px;
+          color: #B5B5B5;
+          opacity: .5;
+      }
+      h5 {
+          color: #5A5A5A;
+          font-size: 14px;
+          margin: 0 0 2px;
+      }
+      h4 {
+        color: #5A5A5A;
+        font-size: 16px;
+        margin: 0;
+    }
+    .section-list {
+        background: #fff;
+        border-radius: 15px;
+        margin: 10px 0;
+    }
+  }

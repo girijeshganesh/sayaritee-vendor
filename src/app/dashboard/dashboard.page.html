@@ -1,0 +1,147 @@
+
+<ion-content [fullscreen]="true">
+  <!-- Nav Bar -->
+  <ion-grid class="home-top-nav">
+    <ion-row class="animate__animated animate__fadeIn animate__faster">
+      <ion-col size="3">
+        <ion-img src="../../../assets/products/logo-white.svg"></ion-img>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        <div class="nav-bc-icon">
+          <ion-icon name="person" class="icn-hd-nav"></ion-icon>
+        </div>
+        <div class="txt-1">{{ 'Welcome' | translate }}</div>
+        <div class="txt-2">{{ 'Garage name' | translate }}</div>
+      </ion-col>
+      <ion-col size="3" class="ion-text-right">
+        <ion-icon name="notifications" class="notification-icon"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <div class="segment-wrp">
+    <ion-segment 
+    value="assigned" 
+    mode="ios"
+    [(ngModel)]="segmentModel" 
+    (ionChange)="segmentChanged($event)">
+  
+      <ion-segment-button value="assigned">
+        <ion-label>Assigned</ion-label>
+      </ion-segment-button>
+  
+      <ion-segment-button value="accepted">
+        <ion-label>Accepted</ion-label>
+      </ion-segment-button>
+  
+      <ion-segment-button value="rejected">
+        <ion-label>Rejected</ion-label>
+      </ion-segment-button>
+  
+    </ion-segment>
+    <div *ngIf="segmentModel === 'assigned'">
+      <ion-grid class="section-list">
+        <ion-row class="d-flex align-items-center">
+          <ion-col size="3">
+            <div class="icn-bac">
+              <ion-img class="card-image round-edge" src="../../../assets/products/caricon.svg"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <h5>Service 1</h5>
+            <h4>Accident service</h4>
+          </ion-col>
+          <ion-col class="ion-text-right">
+            <ion-icon name="arrow-forward-circle" class="icn-rgt"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="section-list">
+        <ion-row class="d-flex align-items-center">
+          <ion-col size="3">
+            <div class="icn-bac">
+              <ion-img class="card-image round-edge" src="../../../assets/products/caricon.svg"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <h5>Service 2</h5>
+            <h4>Accident service</h4>
+          </ion-col>
+          <ion-col class="ion-text-right">
+            <ion-icon name="arrow-forward-circle" class="icn-rgt"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="section-list">
+        <ion-row class="d-flex align-items-center">
+          <ion-col size="3">
+            <div class="icn-bac">
+              <ion-img class="card-image round-edge" src="../../../assets/products/caricon.svg"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <h5>Service 3</h5>
+            <h4>Accident service</h4>
+          </ion-col>
+          <ion-col class="ion-text-right">
+            <ion-icon name="arrow-forward-circle" class="icn-rgt"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngIf="segmentModel === 'accepted'">
+      <ion-grid class="section-list">
+        <ion-row class="d-flex align-items-center">
+          <ion-col size="3">
+            <div class="icn-bac">
+              <ion-img class="card-image round-edge" src="../../../assets/products/caricon.svg"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <h5>Service 2</h5>
+            <h4>Accident service</h4>
+          </ion-col>
+          <ion-col class="ion-text-right">
+            <ion-icon name="arrow-forward-circle" class="icn-rgt"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="section-list">
+        <ion-row class="d-flex align-items-center">
+          <ion-col size="3">
+            <div class="icn-bac">
+              <ion-img class="card-image round-edge" src="../../../assets/products/caricon.svg"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <h5>Service 3</h5>
+            <h4>Accident service</h4>
+          </ion-col>
+          <ion-col class="ion-text-right">
+            <ion-icon name="arrow-forward-circle" class="icn-rgt"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngIf="segmentModel === 'rejected'">
+      <ion-grid class="section-list">
+        <ion-row class="d-flex align-items-center">
+          <ion-col size="3">
+            <div class="icn-bac">
+              <ion-img class="card-image round-edge" src="../../../assets/products/caricon.svg"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="7">
+            <h5>Service 1</h5>
+            <h4>Accident service</h4>
+          </ion-col>
+          <ion-col class="ion-text-right">
+            <ion-icon name="arrow-forward-circle" class="icn-rgt"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </div>
+
+</ion-content>

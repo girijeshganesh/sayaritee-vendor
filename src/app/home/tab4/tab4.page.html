@@ -1,0 +1,82 @@
+<ion-content [fullscreen]="true">
+  <!-- Nav Bar -->
+  <ion-grid class="home-top-nav">
+    <ion-row class="animate__animated animate__fadeIn animate__faster">
+      <ion-col size="3">
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        <div class="nav-bc-icon">
+          <ion-icon name="person" class="icn-hd-nav"></ion-icon>
+        </div>
+        <div class="txt-1">{{ 'Johny Bravo' | translate }}</div>
+        <div class="txt-2">{{ '+974 666 585 555' | translate }}</div>
+      </ion-col>
+      <ion-col size="3" class="ion-text-right">
+        <ion-icon name="pencil-outline" class="edit-icn"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <div class="account-list">
+   <ion-grid>
+     <ion-row>
+       <ion-col size="10">
+         <div class="list-txt animate__animated animate__slideInUp animate__faster">{{ 'My services' | translate }}</div>
+       </ion-col>
+       <ion-col class="ion-text-right">
+        <ion-icon name="chevron-forward-outline" class="rgt-icn"></ion-icon>
+      </ion-col>
+     </ion-row>
+     <ion-row>
+      <ion-col size="10">
+        <div class="list-txt animate__animated animate__slideInUp animate__faster">{{ 'Service history' | translate }}</div>
+      </ion-col>
+      <ion-col class="ion-text-right">
+       <ion-icon name="chevron-forward-outline" class="rgt-icn"></ion-icon>
+     </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10">
+        <div class="list-txt animate__animated animate__slideInUp animate__faster">{{ 'Requested quotes' | translate }}</div>
+      </ion-col>
+      <ion-col class="ion-text-right">
+       <ion-icon name="chevron-forward-outline" class="rgt-icn"></ion-icon>
+     </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10">
+        <div class="list-txt animate__animated animate__slideInUp animate__faster">{{ 'All parts' | translate }}</div>
+      </ion-col>
+      <ion-col class="ion-text-right">
+       <ion-icon name="chevron-forward-outline" class="rgt-icn"></ion-icon>
+     </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10">
+        <div class="list-txt animate__animated animate__slideInUp animate__faster">{{ 'All services' | translate }}</div>
+      </ion-col>
+      <ion-col class="ion-text-right">
+       <ion-icon name="chevron-forward-outline" class="rgt-icn"></ion-icon>
+     </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10">
+        <div class="list-txt animate__animated animate__slideInUp animate__faster">{{ 'Logout' | translate }}</div>
+      </ion-col>
+      <ion-col class="ion-text-right">
+       <ion-icon name="chevron-forward-outline" class="rgt-icn"></ion-icon>
+     </ion-col>
+    </ion-row>
+   </ion-grid>
+  </div>
+
+  <div class="bottom-bar no-gap">
+    <ion-row class="no-gap">
+      <ion-grid size="12" class="no-gap">
+        <ion-button color="primary" routerLink="/register" size="large" class="ion-text-capitalize" expand="full"
+          shape="round">{{ 'Rate our service' | translate }}</ion-button>
+      </ion-grid>
+    </ion-row>
+  </div>
+</ion-content>

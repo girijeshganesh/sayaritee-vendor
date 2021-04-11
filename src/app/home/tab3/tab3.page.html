@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon routerLink="/home" name="arrow-back-outline"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-title>{{ 'Services' | translate }}</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-searchbar class="animate__animated animate__fadeInDown animate__faster"></ion-searchbar>
+    <!-- <div class="center-result animate__animated animate__fadeIn animate__faster"><ion-text class="ion-text-center"><h6>Sorry, No results found!</h6></ion-text></div> -->
+  <!-- Categories Grid -->
+  <ion-grid class="categories-grid animate__animated animate__fadeIn animate__faster">
+    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+      <ion-slide *ngFor="let category of categories.categories; let i = index;" class="x-small-card">
+        <ion-col routerLink="/product-list">
+          <ion-img class="card-image round-edge" src="../../../assets/products/{{i}}.jpg"></ion-img>
+          <p class="ion-text-uppercase left-text no-gap">{{ category }}</p>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </ion-grid>
+  <h4>{{ 'Common services' | translate }}</h4>
+  <ion-list class="bac-transparent">
+    <ion-item *ngFor="let entry of form" class="service-scn">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="start" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <!-- <div class="bottom-bar no-gap">
+    <ion-row class="no-gap">
+      <ion-grid size="12" class="no-gap">
+        <ion-button color="primary" routerLink="/servicedetails" size="large" class="ion-text-capitalize" expand="full"
+          shape="round">{{ 'NEXT' | translate }}</ion-button>
+      </ion-grid>
+    </ion-row>
+  </div> -->
+</ion-content>
+<ion-footer class="ion-text-center">
+  <ion-toolbar>
+    <ion-title>{{ 'NEXT' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-footer>

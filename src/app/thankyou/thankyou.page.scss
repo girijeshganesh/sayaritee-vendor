@@ -1,0 +1,28 @@
+.tck {
+    color: #5A9500;
+    font-size: 100px;
+}
+.tnk-wrp {
+    .tnk-inner {
+        padding: 0 80px;
+        margin: -100px 0 0 0;
+    }
+    h1 {
+        color: #606060;
+        font-size: 25px;
+    }
+    h4 {
+        color: #7A7A7A;
+        font-size: 16px;
+    }
+    .btn-home {
+        margin: 40px 0 0;
+        span {
+            background: #55407A;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 100px;
+            padding: 10px 50px;
+        }
+    }
+}
